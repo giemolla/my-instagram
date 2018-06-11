@@ -1,0 +1,11 @@
+.fa-heart {
+    color: #e2ede6;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.liked {
+    color: red;
+}

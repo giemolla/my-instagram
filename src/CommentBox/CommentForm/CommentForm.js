@@ -8,11 +8,11 @@ class CommentForm extends Component {
     render() {
         return (
             <div className="card-header">
-                <h4>Dodaj komentarz</h4>
+                <h4>Add comment</h4>
                 <form onSubmit={this._handleSubmit.bind(this)}>
                     <div className="form-groups">
                         <input type="text"
-                                placeholder="Imię"
+                                placeholder="Name"
                                 className="form-control"
                                 value={this.state.commentAuthor}
                                 onChange={(event) => this.setState({commentAuthor: event.target.value})}/>
@@ -20,9 +20,9 @@ class CommentForm extends Component {
                                 rows="4"
                                 value={this.state.commentBody}
                                 onChange={(event) => this.setState({commentBody: event.target.value})}
-                                placeholder="Treść komentarza..." >
+                                placeholder="Your comment here..." >
                         </textarea>
-                        <button type="submit" className="btn btn-info">Dodaj</button>
+                        <button type="submit" className="btn btn-info">Add</button>
                     </div>
                 </form>
             </div>
